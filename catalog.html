@@ -30,10 +30,72 @@
         <p>Равшан Джамшутович</p>
         <button type="button">Выйти</button>
       </div>
-      <a href="blank.html">Вход</a>
-      <a href="blank.html">Регистрация</a>
+      <a href="blank.html">Мои заказы</a>
+      <a href="blank.html">Личный кабинет</a>
     </header>
     <main>
+      <h1>Перфораторы</h1>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="index.html">Инструмент</a>
+        </li>
+        <li>
+          Перфораторы
+        </li>
+      </ul>
+      <section>
+        <h2>Фильтр</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена</legend>
+            <input type="range" step="100" min="0" max="30000" list="rangeList" id="rangeList">
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label for="bosch">BOSCH</label>
+                <input type="checkbox" name="bosch" id="bosch" checked>
+              </li>
+              <li>
+                <label for="interskol">ИНТЕРСКОЛ</label>
+                <input type="checkbox" name="interskol" id="interskol">
+              </li>
+              <li>
+                <label for="makita">MAKITA</label>
+                <input type="checkbox" name="makita" id="makita" checked>
+              </li>
+              <li>
+                <label for="dewalt">DEWALT</label>
+                <input type="checkbox" name="dewalt" id="dewalt">
+              </li>
+              <li>
+                <label for="hitachi">HITACHI</label>
+                <input type="checkbox" name="hitachi" id="hitachi">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label for="battary-power">Аккумуляторные</label>
+                <input type="radio" name="power" value="battary-power" id="battary-power">
+              </li>
+              <li>
+                <label for="mains-power">Сетевые</label>
+                <input type="radio" name="power" value="mains-power" id="mains-power">
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </section>
 
     </main>
     <footer>
